@@ -1,0 +1,38 @@
+Package: RiboDiPA
+Type: Package
+Title: Differential pattern analysis for Ribo-seq data
+Date: 2020-10-31
+Version: 0.99.19
+Authors@R:
+    c(person(given = "Keren",
+             family = "Li",
+             role = c("aut"),
+             email = "keren.li@northwestern.edu"),
+      person(given = "Matt",
+             family = "Hope",
+             role = "aut"),
+      person(given = "Xiaozhong",
+             family = "Wang",
+             role = "aut"),
+      person(given = "Ji-Ping",
+             family = "Wang",
+             role = c("aut","cre"),
+             email = "jzwang@northwestern.edu"))
+Description: This package performs differential pattern analysis for Ribo-seq data. It identifies genes with significantly different patterns in the ribosome footprint between two conditions. RiboDiPA contains five major components including bam file processing, P-site mapping, data binning, differential pattern analysis and footprint visualization. 
+License: LGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 1.0.2), graphics, stats, data.table, elitism,
+        methods, S4Vectors, IRanges, GenomicRanges, matrixStats,
+        reldist, doParallel, foreach, parallel, qvalue, DESeq2, ggplot2,
+        BiocFileCache 
+LinkingTo: Rcpp
+Depends: R (>= 4.0), Rsamtools, GenomicFeatures, GenomicAlignments
+NeedsCompilation: yes
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+biocViews: RiboSeq, GeneExpression, GeneRegulation,
+        DifferentialExpression, Sequencing, Coverage, Alignment,
+        RNASeq, ImmunoOncology, QualityControl, DataImport, Software,
+        Normalization
