@@ -325,7 +325,7 @@ psiteMapping <- function(bam_file_list, gtf_file, psite.mapping="auto",
             function(x) .segCal(x, range.gene2), numeric(1)), ncol=2)
         range.relative <- cbind(range.relative, range.gene)
         rownames(range.relative) <- unlist(x$EXONNAME) 
-    }else{Maybe
+    }else{
         m <- max(start(x),end(x))+1
         range.gene1 <- cbind(rev(m-ends),rev(m-starts))
         range.gene2 <- IRanges(range.gene1[,1],range.gene1[,2])

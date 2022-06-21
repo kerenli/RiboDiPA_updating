@@ -1,9 +1,9 @@
 Package: RiboDiPA
 Type: Package
 Title: Differential pattern analysis for Ribo-seq data
-Date: 2020-10-31
-Version: 0.99.19
-Authors@R:
+Date: 2020-08-24
+Version: 1.4.0
+Authors@R: 
     c(person(given = "Keren",
              family = "Li",
              role = c("aut"),
@@ -24,10 +24,10 @@ Encoding: UTF-8
 LazyData: true
 Imports: Rcpp (>= 1.0.2), graphics, stats, data.table, elitism,
         methods, S4Vectors, IRanges, GenomicRanges, matrixStats,
-        reldist, doParallel, foreach, parallel, qvalue, DESeq2, ggplot2,
-        BiocFileCache 
+        reldist, doParallel, foreach, parallel, qvalue, DESeq2,
+        ggplot2, BiocFileCache,BiocGenerics
 LinkingTo: Rcpp
-Depends: R (>= 4.0), Rsamtools, GenomicFeatures, GenomicAlignments
+Depends: R (>= 4.1), Rsamtools, GenomicFeatures, GenomicAlignments
 NeedsCompilation: yes
 RoxygenNote: 6.1.1
 Suggests: knitr, rmarkdown
@@ -36,3 +36,14 @@ biocViews: RiboSeq, GeneExpression, GeneRegulation,
         DifferentialExpression, Sequencing, Coverage, Alignment,
         RNASeq, ImmunoOncology, QualityControl, DataImport, Software,
         Normalization
+Packaged: 2022-04-26 21:55:35 UTC; biocbuild
+Author: Keren Li [aut],
+  Matt Hope [aut],
+  Xiaozhong Wang [aut],
+  Ji-Ping Wang [aut, cre]
+Maintainer: Ji-Ping Wang <jzwang@northwestern.edu>
+git_url: https://git.bioconductor.org/packages/RiboDiPA
+git_branch: RELEASE_3_15
+git_last_commit: d199dbd
+git_last_commit_date: 2022-04-26
+Date/Publication: 2022-04-26
